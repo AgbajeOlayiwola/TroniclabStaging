@@ -1,0 +1,14 @@
+.message{
+    animation: messages 2s ease-in-out forwards infinite;
+    fill: blue;
+}
+@keyframes messages{
+    0%{
+        transform: translate(-100px, 0px);
+    }
+    50%{
+        transform: translate(100px, 0px)skew(-10deg, -1deg);
+    }100%{
+        transform: translate(100px, 0px);
+    }
+}

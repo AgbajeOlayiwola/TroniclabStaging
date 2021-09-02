@@ -1,0 +1,11 @@
+.check{
+    animation: check 2s ease-in-out forwards infinite;
+    fill: blue
+}
+@keyframes check{
+    from{
+        fill-opacity: 0;
+    }to{
+        fill-opacity: 1;
+    }
+}
