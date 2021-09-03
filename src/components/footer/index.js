@@ -29,7 +29,7 @@ export default function Footer() {
                             process and minimizing production cost.<br></br></p>
           </div>
 
-          <p className="copyright">Company Name © 2017</p>
+          <p className="copyright">TRONICLAB © 2018</p>
         </div>
         </div>
     )
