@@ -12,7 +12,7 @@ export default function Body() {
       cursorRenderer={cursor => <h1>{cursor}</h1>}
       displayTextRenderer={(text, i) => {
         return (
-          <h4>
+          <h2>
             {text.split('').map((char, i) => {
               const key = `${i}`;
               return (
@@ -22,7 +22,7 @@ export default function Body() {
                 >{char}</span>
               );
             })}
-          </h4>
+          </h2>
         );
       }}        
     />
