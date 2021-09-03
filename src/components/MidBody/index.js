@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import Sample from './thee3Dmodelcomponent/box';
 
 export default function Midbody() {
     return (

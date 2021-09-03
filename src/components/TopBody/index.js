@@ -1,17 +1,32 @@
-import React from 'react'
+import Particles from './dots.js';
 import './index.css'
-import MainSlide from './slidercomponent/mainSlide';
-import { Slider } from './slidercomponent/silder';
-
+import ReactTypingEffect from 'react-typing-effect';
 
 export default function Body() {
     return (
         <div className="body" >
-
-<MainSlide slides={Slider}/>
-        <div className="BodyText">
-            <h1 className="BodyText_1"><span className="BodyText_DesProd">Design</span> and <span className="BodyText_DesProd">Production</span> fufilment for<br></br> highend projects</h1>
-        </div>
+        <Particles/>
+        <div className='bodyStuff'>
+        <ReactTypingEffect
+      text={["A Start-Up Friendly Manufacturer", 'Prototypes Built With Purpose', 'Professional 3D Printing Services']}
+      cursorRenderer={cursor => <h1>{cursor}</h1>}
+      displayTextRenderer={(text, i) => {
+        return (
+          <h4>
+            {text.split('').map((char, i) => {
+              const key = `${i}`;
+              return (
+                <span
+                  key={key}
+                  className='topView_TypeText'
+                >{char}</span>
+              );
+            })}
+          </h4>
+        );
+      }}        
+    />
+    </div>
         </div>
     )
 }

@@ -1,19 +1,13 @@
 .body{
     height: 750px;
+    background-color: #222;
 }
-.BodyText{
-    display: flex;
-    position: absolute;
-bottom: 50%;
-left: 30%;
-    justify-content: center;
-}
-.BodyText_1{
+.bodyStuff{
+
+     position: absolute;
     color: white;
-    text-align: center;
-}
-.BodyText_DesProd{
-    color: #426cb4;
+    top: 267px;
+    left: 258px;
 }
 @media only screen and (min-width: 150px) and (max-width: 750px){
     .body{
