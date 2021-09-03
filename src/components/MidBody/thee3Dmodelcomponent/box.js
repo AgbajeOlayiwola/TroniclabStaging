@@ -25,11 +25,12 @@ export default function Sample() {
               factor={4} // Size factor (default=4)
               saturation={4} // Saturation 0-1 (default=0)
             />
+            <Suspense fallback={null}>
                 <ambientLight intensity={0.0} />
                 <spotLight position={[5, 20, 20]} intensity={0.3} angle={0.15} penumbra={1} castShadow/>
                 <pointLight position={[5, 20, 20]} angle={0.45}/>
                 <Environment preset="city" />
-                <Suspense fallback={null}>
+                
                 <TroniclabLogo  position={[-4, -5, -15]} scale={[3,3,3]}/>
                 <Environment  files='christmas_photo_studio_04_1k.hdr' />
                 <ContactShadows
@@ -40,12 +41,13 @@ export default function Sample() {
                 far={10} // Focal distance (default=10)
                 resolution={256} // Rendertarget resolution (default=256)
                 />
-                </Suspense>
+                
                 <OrbitControls 
                 minPolarAngle={Math.PI / 2} 
                 maxPolarAngle={Math.PI / 2} 
                 enableZoom={true} 
                 enablePan={true} />
+                </Suspense>
         </Canvas>
         </div>
     )

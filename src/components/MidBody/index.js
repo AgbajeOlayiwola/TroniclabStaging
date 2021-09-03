@@ -1,11 +1,13 @@
 import React from 'react'
 import './style.css'
+import Sample from './thee3Dmodelcomponent/box';
 
 export default function Midbody() {
     return (
         <div className="midbody">
             <div className="midbody_grid">
                 <div className="midbody_side1">
+                <Sample/>
                     <p>Use Mouse/Trackpad to Interact With 3D models</p>
                 </div>
                 <div className="midbody_side2">

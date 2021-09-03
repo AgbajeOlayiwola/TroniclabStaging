@@ -17,18 +17,17 @@ console.log(location.pathname);
     return (
         <div className="navbar">
 
-            <nav className={`navbar_Links ${navClass}`}>
-
+            
+            <div className='navbarInner'>
                 <NavLink to='/'className="navbar_item">
                     <div className="navbar_logo">
                             <img src={logo} alt=""  className='navbar_LogoImage'/>
-                            
                     </div>
                     
                 </NavLink>
                 {/*<NavLink  activeClassName="is-active" className="navbar_item" to='/Services'>
                 Services</NavLink>*/}
-  
+                <nav className={`navbar_Links ${navClass}`}>
                 <NavLink  activeClassName="is-active" className="navbar_item" to='/Gallery'>
                 Gallery</NavLink>
 
@@ -38,6 +37,7 @@ console.log(location.pathname);
                 <NavLink  activeClassName="is-active" className="navbar_item" to='/Contact'>
                 Contact</NavLink>
             </nav>
+            </div>
         </div>
     )
 }

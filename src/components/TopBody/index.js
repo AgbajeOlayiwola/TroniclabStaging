@@ -8,7 +8,7 @@ export default function Body() {
         <Particles/>
         <div className='bodyStuff'>
         <ReactTypingEffect
-      text={["A Start-Up Friendly Manufacturer", 'Prototypes Built With Purpose', 'Professional 3D Printing Services']}
+      text={[ 'Professional 3D Printing Services', "A Start-Up Friendly Manufacturer", 'Prototypes Built With Purpose']}
       cursorRenderer={cursor => <h1>{cursor}</h1>}
       displayTextRenderer={(text, i) => {
         return (
